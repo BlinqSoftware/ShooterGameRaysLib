@@ -8,6 +8,7 @@ using System.Numerics;
 using ShooterGame.Languages;
 using ShooterGame.Settings;
 using ShooterGame.Utils;
+using ShooterGame.Screens;
 
 using Raylib_cs;
 
@@ -15,9 +16,10 @@ namespace ShooterGame
 {
     public class Main
     {
-        public Main _singlton;
+        public static Main _singlton;
         public RenderTexture2D _renderTexture;
         public LanguageManager _languageManager;
+        public ScreenManager _screenManager;
         public readonly Vector2 renderSize = new Vector2()
         {
             X = 1280,
@@ -25,7 +27,6 @@ namespace ShooterGame
         };
 
         public float _renderScale = 0f;
-
 
         public Main()
         {
@@ -61,9 +62,11 @@ namespace ShooterGame
 
         private void Init()
         {
+            StaticLoad.InitAndLoad();
             Mouse.Init();
             _renderTexture = Raylib.LoadRenderTexture((int)renderSize.X, (int)renderSize.Y);
             Raylib.SetTextureFilter(_renderTexture.texture, TextureFilter.TEXTURE_FILTER_POINT);
+            _screenManager = new ScreenManager();
         }
 
         private void Update()
@@ -73,16 +76,13 @@ namespace ShooterGame
 
             _renderScale = MathF.Min((float)SettingsManager._holder.screenWidth / renderSize.X, (float)SettingsManager._holder.screenHeight / renderSize.Y);
             Mouse.Update(new Vector2() { X = SettingsManager._holder.screenWidth, Y = SettingsManager._holder.screenHeight }, renderSize, _renderScale);
+
+            _screenManager.Update();
         }
 
         private void Draw()
         {
-            Raylib.BeginTextureMode(_renderTexture);
-            Raylib.ClearBackground(Color.WHITE);
-
-            Raylib.DrawText("Hello World", 12, 12, 20, Color.RED);
-            Raylib.DrawText($"Mouse {Mouse.position}", 12, 50, 35, Color.BLACK);
-            Raylib.EndTextureMode();
+            _screenManager.Draw();
 
             Raylib.BeginDrawing();
             Raylib.ClearBackground(Color.BLACK);
@@ -99,6 +99,7 @@ namespace ShooterGame
         private void Deinit()
         {
             _singlton = null;
+            StaticLoad.Deinit();
             Raylib.UnloadRenderTexture(_renderTexture);
             SettingsManager.deInit();
             Raylib.CloseWindow();

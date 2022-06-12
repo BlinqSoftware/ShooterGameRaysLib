@@ -23,6 +23,11 @@ namespace ShooterGame.GameObjects
 
         ~GameObjectManager()
         {
+            Deinit();
+        }
+
+        public void Deinit()
+        {
             _gameObjects.Clear();
             _objectUpdate.Clear();
             _objectDraw.Clear();

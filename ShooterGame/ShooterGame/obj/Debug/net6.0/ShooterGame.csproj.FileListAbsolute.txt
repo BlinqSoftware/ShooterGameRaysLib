@@ -20,3 +20,14 @@ C:\Blinq Software\ShooterGameRaysLib\ShooterGame\ShooterGame\obj\Debug\net6.0\re
 C:\Blinq Software\ShooterGameRaysLib\ShooterGame\ShooterGame\obj\Debug\net6.0\ShooterGame.pdb
 C:\Blinq Software\ShooterGameRaysLib\ShooterGame\ShooterGame\obj\Debug\net6.0\ShooterGame.genruntimeconfig.cache
 C:\Blinq Software\ShooterGameRaysLib\ShooterGame\ShooterGame\obj\Debug\net6.0\ref\ShooterGame.dll
+C:\Blinq Software\ShooterGameRaysLib\ShooterGame\ShooterGame\bin\Debug\net6.0\Content\SplashScreen\Eye\Eye_0.png
+C:\Blinq Software\ShooterGameRaysLib\ShooterGame\ShooterGame\bin\Debug\net6.0\Content\SplashScreen\Eye\Eye_1.png
+C:\Blinq Software\ShooterGameRaysLib\ShooterGame\ShooterGame\bin\Debug\net6.0\Content\SplashScreen\Eye\Eye_10.png
+C:\Blinq Software\ShooterGameRaysLib\ShooterGame\ShooterGame\bin\Debug\net6.0\Content\SplashScreen\Eye\Eye_2.png
+C:\Blinq Software\ShooterGameRaysLib\ShooterGame\ShooterGame\bin\Debug\net6.0\Content\SplashScreen\Eye\Eye_3.png
+C:\Blinq Software\ShooterGameRaysLib\ShooterGame\ShooterGame\bin\Debug\net6.0\Content\SplashScreen\Eye\Eye_4.png
+C:\Blinq Software\ShooterGameRaysLib\ShooterGame\ShooterGame\bin\Debug\net6.0\Content\SplashScreen\Eye\Eye_5.png
+C:\Blinq Software\ShooterGameRaysLib\ShooterGame\ShooterGame\bin\Debug\net6.0\Content\SplashScreen\Eye\Eye_6.png
+C:\Blinq Software\ShooterGameRaysLib\ShooterGame\ShooterGame\bin\Debug\net6.0\Content\SplashScreen\Eye\Eye_7.png
+C:\Blinq Software\ShooterGameRaysLib\ShooterGame\ShooterGame\bin\Debug\net6.0\Content\SplashScreen\Eye\Eye_8.png
+C:\Blinq Software\ShooterGameRaysLib\ShooterGame\ShooterGame\bin\Debug\net6.0\Content\SplashScreen\Eye\Eye_9.png
