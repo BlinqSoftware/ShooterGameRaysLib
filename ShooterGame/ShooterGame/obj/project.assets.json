@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "AnySerializer/1.1.46": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/AnySerializer.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AnySerializer.dll": {}
+        }
+      },
       "Raylib-cs/4.0.0.1": {
         "type": "package",
         "dependencies": {
@@ -44,6 +53,24 @@
     }
   },
   "libraries": {
+    "AnySerializer/1.1.46": {
+      "sha512": "b8A0JgaU6x6aQS42G58s62rUKC0xmQy0Z64T9LPVCKecuarTsD/ZtCMjAy8eORcnj/h6gyCwspcz3r26hW9i+Q==",
+      "type": "package",
+      "path": "anyserializer/1.1.46",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "anyserializer.1.1.46.nupkg.sha512",
+        "anyserializer.nuspec",
+        "lib/net45/AnySerializer.dll",
+        "lib/net46/AnySerializer.dll",
+        "lib/net461/AnySerializer.dll",
+        "lib/net462/AnySerializer.dll",
+        "lib/net47/AnySerializer.dll",
+        "lib/net48/AnySerializer.dll",
+        "lib/netstandard2.0/AnySerializer.dll"
+      ]
+    },
     "Raylib-cs/4.0.0.1": {
       "sha512": "P8VqY5UsEawOoWElEcLNmLu08zOpvkk5C7eI0OKR8fDL7v6bPkFchC8iUJI47BgPq0lYsQbnMeEOe2bz/HZ5bA==",
       "type": "package",
@@ -115,6 +142,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AnySerializer >= 1.1.46",
       "Raylib-cs >= 4.0.0.1"
     ]
   },
@@ -166,6 +194,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "AnySerializer": {
+            "target": "Package",
+            "version": "[1.1.46, )"
+          },
           "Raylib-cs": {
             "target": "Package",
             "version": "[4.0.0.1, )"

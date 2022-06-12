@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "MnAz9ELI0qtWUbQTMR1te3ct1CU1a3wujPhz+p2oN3dOMt7pm8HxMpmotJHywBMi5IA1SPwow+mOuALifVcqLA==",
+  "dgSpecHash": "60e1DB+l76ECQFmTwHeaFaPCSLzM5bPon12GQwK2gkH1u3A3jJgWIIWLKMYwBl5dQyKHhYzQdtHfV6zx+3apJw==",
   "success": true,
   "projectFilePath": "C:\\Blinq Software\\ShooterGameRaysLib\\ShooterGame\\ShooterGame\\ShooterGame.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Lee\\.nuget\\packages\\anyserializer\\1.1.46\\anyserializer.1.1.46.nupkg.sha512",
     "C:\\Users\\Lee\\.nuget\\packages\\raylib-cs\\4.0.0.1\\raylib-cs.4.0.0.1.nupkg.sha512",
     "C:\\Users\\Lee\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512"
   ],

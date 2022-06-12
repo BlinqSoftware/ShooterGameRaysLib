@@ -5,4 +5,9 @@
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AnySerializer" Version="1.1.46" />
+    <PackageReference Include="Raylib-cs" Version="4.0.0.1" />
+  </ItemGroup>
+
 </Project>
